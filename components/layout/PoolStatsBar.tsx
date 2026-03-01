@@ -1,6 +1,9 @@
 "use client";
 
-import { PoolState, INITIAL_POOL } from "@/app/page";
+import { PoolState } from "@/app/page";
+
+// Reference size for pool-health bar (10,000 USDC matches the deploy seed)
+const REFERENCE_POOL = 10_000;
 
 interface PoolStatsBarProps {
   pool: PoolState;
@@ -8,8 +11,7 @@ interface PoolStatsBarProps {
 }
 
 export default function PoolStatsBar({ pool, maxBet }: PoolStatsBarProps) {
-  // Health = pool / initial pool (capped at 100%)
-  const healthPct = Math.max(0, Math.min(100, (pool.size / INITIAL_POOL) * 100));
+  const healthPct = Math.max(0, Math.min(100, (pool.size / REFERENCE_POOL) * 100));
   const healthColor =
     healthPct > 70
       ? "bg-green-500"
