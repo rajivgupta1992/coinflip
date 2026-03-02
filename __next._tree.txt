@@ -1,2 +1,2 @@
-:HL["/coinflip/_next/static/chunks/3dd6db32f59018bd.css","style"]
-0:{"buildId":"Lzm5c97wg9fH7PKjAMxf6","tree":{"name":"","paramType":null,"paramKey":"","hasRuntimePrefetch":false,"slots":{"children":{"name":"__PAGE__","paramType":null,"paramKey":"__PAGE__","hasRuntimePrefetch":false,"slots":null,"isRootLayout":false}},"isRootLayout":true},"staleTime":300}
+:HL["/coinflip/_next/static/chunks/d6f562fda5138e65.css","style"]
+0:{"buildId":"7VP3TWHWOGIpz6tQ1aaff","tree":{"name":"","paramType":null,"paramKey":"","hasRuntimePrefetch":false,"slots":{"children":{"name":"__PAGE__","paramType":null,"paramKey":"__PAGE__","hasRuntimePrefetch":false,"slots":null,"isRootLayout":false}},"isRootLayout":true},"staleTime":300}

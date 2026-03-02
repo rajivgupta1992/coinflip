@@ -1,4 +1,4 @@
 1:"$Sreact.fragment"
 2:I[339756,["/coinflip/_next/static/chunks/8a851fd72a1126a9.js","/coinflip/_next/static/chunks/452a3479b1b93bbe.js"],"default"]
 3:I[837457,["/coinflip/_next/static/chunks/8a851fd72a1126a9.js","/coinflip/_next/static/chunks/452a3479b1b93bbe.js"],"default"]
-0:{"buildId":"Lzm5c97wg9fH7PKjAMxf6","rsc":["$","$1","c",{"children":[null,["$","$L2",null,{"parallelRouterKey":"children","template":["$","$L3",null,{}]}]]}],"loading":null,"isPartial":false}
+0:{"buildId":"7VP3TWHWOGIpz6tQ1aaff","rsc":["$","$1","c",{"children":[null,["$","$L2",null,{"parallelRouterKey":"children","template":["$","$L3",null,{}]}]]}],"loading":null,"isPartial":false}
