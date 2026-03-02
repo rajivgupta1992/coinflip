@@ -110,7 +110,10 @@ export const COINFLIP_ABI = [
   },
 ] as const;
 
-// Minimal ERC-20 ABI for approve + balanceOf
+// Polygon Amoy chain ID — used to gate testnet-only UI
+export const AMOY_CHAIN_ID = 80002;
+
+// Minimal ERC-20 ABI for approve + balanceOf + testnet faucet
 export const ERC20_ABI = [
   {
     type: "function",
@@ -138,5 +141,15 @@ export const ERC20_ABI = [
     ],
     outputs: [{ name: "", type: "uint256", internalType: "uint256" }],
     stateMutability: "view",
+  },
+  {
+    type: "function",
+    name: "faucet",
+    inputs: [
+      { name: "to",     type: "address", internalType: "address" },
+      { name: "amount", type: "uint256", internalType: "uint256" },
+    ],
+    outputs: [],
+    stateMutability: "nonpayable",
   },
 ] as const;

@@ -167,6 +167,7 @@ export default function Home() {
               maxBet={maxBet}
               onFlip={handleFlip}
               onPlayAgain={handlePlayAgain}
+              onFaucet={refetchBalance}
             />
           )}
         </div>

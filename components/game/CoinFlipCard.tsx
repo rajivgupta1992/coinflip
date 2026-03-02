@@ -6,6 +6,7 @@ import SideSelector from "./SideSelector";
 import BetAmountInput from "./BetAmountInput";
 import PendingBet from "./PendingBet";
 import ResultModal from "./ResultModal";
+import FaucetButton from "./FaucetButton";
 
 interface CoinFlipCardProps {
   gameState: GameState;
@@ -13,6 +14,7 @@ interface CoinFlipCardProps {
   maxBet: number;
   onFlip: (side: Side, amount: number) => void;
   onPlayAgain: () => void;
+  onFaucet: () => void;
 }
 
 export default function CoinFlipCard({
@@ -21,6 +23,7 @@ export default function CoinFlipCard({
   maxBet,
   onFlip,
   onPlayAgain,
+  onFaucet,
 }: CoinFlipCardProps) {
   const [selectedSide, setSelectedSide] = useState<Side | null>(null);
   const [betInput, setBetInput] = useState<string>("");
@@ -94,6 +97,8 @@ export default function CoinFlipCard({
                 ? "Invalid bet"
                 : "Flip →"}
             </button>
+
+            <FaucetButton onSuccess={onFaucet} />
           </div>
         )}
 
